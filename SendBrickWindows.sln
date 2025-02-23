@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendBrickWindows", "SendBrickWindows\SendBrickWindows.csproj", "{7730C5C9-809B-4100-BCEE-8B3246C31CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendBrickWindows", "SendBrickWindows\SendBrickWindows.csproj", "{7730C5C9-809B-4100-BCEE-8B3246C31CCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendbrickShared", "..\SendBrickCore\SendbrickShared\SendbrickShared.csproj", "{1DEE7017-F562-4360-8A66-614A28A499D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendBrickWindowsTest", "SendBrickWindowsTest\SendBrickWindowsTest.csproj", "{36F95229-3D00-4CA0-883C-22290E530728}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7730C5C9-809B-4100-BCEE-8B3246C31CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7730C5C9-809B-4100-BCEE-8B3246C31CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7730C5C9-809B-4100-BCEE-8B3246C31CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DEE7017-F562-4360-8A66-614A28A499D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEE7017-F562-4360-8A66-614A28A499D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEE7017-F562-4360-8A66-614A28A499D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEE7017-F562-4360-8A66-614A28A499D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F95229-3D00-4CA0-883C-22290E530728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F95229-3D00-4CA0-883C-22290E530728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F95229-3D00-4CA0-883C-22290E530728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F95229-3D00-4CA0-883C-22290E530728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
