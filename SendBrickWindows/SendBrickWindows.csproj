@@ -16,6 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SendBrickCore\SendbrickShared\SendbrickShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Resouorces\SendBrick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
