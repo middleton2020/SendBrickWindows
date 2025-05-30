@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "qgJUxbPUOb8=",
-  "success": true,
+  "dgSpecHash": "jt2JYjwov2I=",
+  "success": false,
   "projectFilePath": "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindowsTest\\SendBrickWindowsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\colin\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
@@ -15,5 +15,17 @@
     "C:\\Users\\colin\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
     "C:\\Users\\colin\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project SendBrickWindows is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project SendBrickWindows supports: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
+      "projectPath": "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindowsTest\\SendBrickWindowsTest.csproj",
+      "filePath": "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindowsTest\\SendBrickWindowsTest.csproj",
+      "libraryId": "SendBrickWindows",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
