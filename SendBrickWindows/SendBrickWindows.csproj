@@ -12,7 +12,6 @@
     <Folder Include="Models\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Resouorces\" />
-    <Folder Include="Tools\" />
     <Folder Include="Windows\" />
   </ItemGroup>
 
