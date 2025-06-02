@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "SendbrickShared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SendbrickShared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SendbrickShared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SendbrickShared/1.0.0": {
+      "type": "project",
+      "path": "../../SendBrickCore/SendbrickShared/SendbrickShared.csproj",
+      "msbuildProject": "../../SendBrickCore/SendbrickShared/SendbrickShared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "SendbrickShared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\colin\\.nuget\\packages\\": {},
@@ -42,7 +61,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\colin\\source\\repos\\SendBrickCore\\SendbrickShared\\SendbrickShared.csproj": {
+              "projectPath": "C:\\Users\\colin\\source\\repos\\SendBrickCore\\SendbrickShared\\SendbrickShared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
