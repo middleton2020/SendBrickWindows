@@ -9,9 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resouorces\CompanyLogo.png" />
+    <None Remove="Resouorces\SendBrick.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Resouorces\" />
     <Folder Include="Windows\" />
   </ItemGroup>
 
@@ -20,9 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resouorces\SendBrick.png">
+    <Resource Include="Resouorces\CompanyLogo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Resource>
+    <Resource Include="Resouorces\SendBrick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

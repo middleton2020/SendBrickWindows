@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SendBrickWindows
+namespace CM.SendBrickWindows
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -20,5 +20,6 @@ namespace SendBrickWindows
         {
             InitializeComponent();
         }
+
     }
 }
