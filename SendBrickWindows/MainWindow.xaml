@@ -26,7 +26,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Image x:Name="SendBrickLogo" Source="/SendBrick.png" 
+        <Image x:Name="SendBrickLogo" Source="/Resouorces/SendBrick.png" 
                VerticalAlignment="Center" HorizontalAlignment="Center" 
                Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" />
 
