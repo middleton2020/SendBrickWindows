@@ -23,12 +23,15 @@ namespace CM.SendBrickWindows
 
         private void DoLogin(object sender, RoutedEventArgs e)
         {
-
+            // Define deligates for DoLogin and DoLogout.
+            // Attach DoLogout to the Click event.
+            BtnLogin.Content = "Logout";
         }
 
         private void DoLogout(object sender, RoutedEventArgs e)
         {
 
+            BtnLogin.Content = "Login";
         }
     }
 }
