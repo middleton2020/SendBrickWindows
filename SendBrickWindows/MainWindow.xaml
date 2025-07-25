@@ -27,7 +27,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
-        <Image x:Name="SendBrickLogo" Source="/SendBrick.png" 
+        <Image x:Name="SendBrickLogo" Source="/Resouorces/SendBrick.png" 
                VerticalAlignment="Center" HorizontalAlignment="Center" 
                Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" />
 
@@ -36,7 +36,7 @@
             Welcome to SendBrick, brick vendor tool
         </TextBlock>
 
-        <Image x:Name="StoreLogo" Source="/CompanyLogo.png" Grid.Column="1" Grid.Row="3" 
+        <Image x:Name="StoreLogo" Source="/Resouorces/CompanyLogo.png" Grid.Column="1" Grid.Row="3" 
                Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <TextBlock Grid.Column="1" Grid.Row="4" FontSize="24" FontWeight="Bold">
             User Name:

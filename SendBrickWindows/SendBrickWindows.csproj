@@ -9,22 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="CompanyLogo.png" />
-    <None Remove="SendBrick.png" />
+    <None Remove="Resouorces\CompanyLogo.png" />
+    <None Remove="Resouorces\SendBrick.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="CompanyLogo.png" />
-    <Resource Include="SendBrick.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Resouorces\CompanyLogo.png">
+    <Content Include="Resouorces\CompanyLogo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Resouorces\SendBrick.png">
+    </Content>
+    <Content Include="Resouorces\SendBrick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
 </Project>
