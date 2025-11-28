@@ -16,6 +16,8 @@ namespace CM.SendBrickWindows
     /// </summary>
     public partial class MainWindow : Window
     {
+        public delegate object DeligateMakeObject(string inpName, object inpObject, string inpPath);
+
         public MainWindow()
         {
             InitializeComponent();
@@ -25,13 +27,22 @@ namespace CM.SendBrickWindows
         {
             // Define deligates for DoLogin and DoLogout.
             // Attach DoLogout to the Click event.
+            if (LoginUser(UserName.Text,Password.Text)
+            {
             BtnLogin.Content = "Logout";
+            BtnLogin.Click -= DoLogin;
+            BtnLogin.Click += DoLogout;
+            }
         }
 
         private void DoLogout(object sender, RoutedEventArgs e)
         {
-
-            BtnLogin.Content = "Login";
+            if (IsLoggedIn())
+            {
+                BtnLogin.Content = "Login";
+                BtnLogin.Click -= DoLogout;
+                BtnLogin.Click += DoLogin;
+            }
         }
     }
 }
