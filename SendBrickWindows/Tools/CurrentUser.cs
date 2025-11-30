@@ -19,6 +19,9 @@ namespace SendBrickWindows.Tools
         public bool LogInUser(string inpUserName, string inpPassword)
         {
             UserRecord = new UserModel();
+            UserRecord.CompanyName = "Bricks In Bloom";
+            UserRecord.CompanyLogo = "/CompanyLogo.png";
+
             UserRecord.UserName = inpUserName;
             return true;
         }

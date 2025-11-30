@@ -12,5 +12,32 @@ namespace CM.SendBrickWindows.Models
         public string UserName { get; set; }
         public string CompanyName { get; set; }
         public string CompanyLogo {  get; set; }
+
+        public UserModel()
+        {
+
+        }
+        public UserModel(string userName)
+        {
+            UserName = userName;
+        }
+        public UserModel(string userName, string companyName)
+        {
+            UserName = userName;
+            CompanyName = companyName;
+        }
+        public UserModel(string userName, string companyName, string companyLogo)
+        {
+            UserName = userName;
+            CompanyName = companyName;
+            CompanyLogo = companyLogo;
+        }
+        public UserModel(string userId, string userName, string companyName, string companyLogo)
+        {
+            UserId = userId;
+            UserName = userName;
+            CompanyName = companyName;
+            CompanyLogo = companyLogo;
+        }
     }
 }
