@@ -11,7 +11,7 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Resouorces\" />
+    <Folder Include="Resources\" />
     <Folder Include="Windows\" />
   </ItemGroup>
 
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resouorces\SendBrick.png">
+    <None Update="Resources\SendBrick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
