@@ -389,26 +389,6 @@
             "related": ".xml"
           }
         }
-      },
-      "SendbrickShared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/SendbrickShared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SendbrickShared.dll": {}
-        }
-      },
-      "SendBrickWindows/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/SendBrickWindows.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SendBrickWindows.dll": {}
-        }
       }
     }
   },
@@ -1006,16 +986,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "SendbrickShared/1.0.0": {
-      "type": "project",
-      "path": "../../SendBrickCore/SendbrickShared/SendbrickShared.csproj",
-      "msbuildProject": "../../SendBrickCore/SendbrickShared/SendbrickShared.csproj"
-    },
-    "SendBrickWindows/1.0.0": {
-      "type": "project",
-      "path": "../SendBrickWindows/SendBrickWindows.csproj",
-      "msbuildProject": "../SendBrickWindows/SendBrickWindows.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1023,15 +993,12 @@
       "MSTest.TestAdapter >= 3.1.1",
       "MSTest.TestFramework >= 3.1.1",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
-      "SendBrickWindows >= 1.0.0",
-      "SendbrickShared >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\colin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1043,14 +1010,12 @@
       "outputPath": "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindowsTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1063,14 +1028,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\colin\\source\\repos\\SendBrickCore\\SendbrickShared\\SendbrickShared.csproj": {
-              "projectPath": "C:\\Users\\colin\\source\\repos\\SendBrickCore\\SendbrickShared\\SendbrickShared.csproj"
-            },
-            "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindows\\SendBrickWindows.csproj": {
-              "projectPath": "C:\\Users\\colin\\source\\repos\\SendBrickWindows\\SendBrickWindows\\SendBrickWindows.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1083,7 +1041,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1122,19 +1080,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project SendBrickWindows is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project SendBrickWindows supports: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
-      "libraryId": "SendBrickWindows",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

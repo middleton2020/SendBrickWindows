@@ -9,20 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Resources\" />
-    <Folder Include="Windows\" />
+    <None Remove="Resouorces\CompanyLogo.png" />
+    <None Remove="Resouorces\SendBrick.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SendBrickCore\SendbrickShared\SendbrickShared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Resources\SendBrick.png">
+    <Content Include="Resouorces\CompanyLogo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="Resouorces\SendBrick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

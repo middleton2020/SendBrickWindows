@@ -17,11 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SendBrickCore\SendbrickShared\SendbrickShared.csproj" />
-    <ProjectReference Include="..\SendBrickWindows\SendBrickWindows.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
