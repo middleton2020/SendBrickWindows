@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SendBrickWindows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b2956c288fa728750b57cb76b13662d664b2342")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13dd245ed76d736c7b4dec0e0fdd11f1f3f6f78e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SendBrickWindows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SendBrickWindows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
