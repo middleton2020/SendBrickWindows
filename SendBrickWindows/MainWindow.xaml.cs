@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using SendBrickWindows.Tools;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,32 +17,45 @@ namespace CM.SendBrickWindows
     /// </summary>
     public partial class MainWindow : Window
     {
-        public delegate object DeligateMakeObject(string inpName, object inpObject, string inpPath);
+        private CurrentUser User { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
+            User = new CurrentUser();
         }
 
         private void DoLogin(object sender, RoutedEventArgs e)
         {
             // Define deligates for DoLogin and DoLogout.
             // Attach DoLogout to the Click event.
-            if (LoginUser(UserName.Text,Password.Text)
+            if (User.LogInUser(UserName.Text, Password.Text))
             {
-            BtnLogin.Content = "Logout";
-            BtnLogin.Click -= DoLogin;
-            BtnLogin.Click += DoLogout;
+                BtnLogin.Content = "Logout";
+                BtnLogin.Click -= DoLogin;
+                BtnLogin.Click += DoLogout;
+
+                if (string.IsNullOrWhiteSpace(User.UserRecord.CompanyLogo))
+                {
+                    BitmapImage companyLogo = new BitmapImage();
+        companyLogo.BeginInit();
+                    companyLogo.UriSource= new Uri(User.UserRecord.CompanyLogo, UriKind.RelativeOrAbsolute);
+                    companyLogo.EndInit();
+
+        StoreLogo.Source = companyLogo;
+                }
             }
         }
 
         private void DoLogout(object sender, RoutedEventArgs e)
         {
-            if (IsLoggedIn())
+            if (User.IsLoggedIn())
             {
                 BtnLogin.Content = "Login";
                 BtnLogin.Click -= DoLogout;
                 BtnLogin.Click += DoLogin;
+
+                StoreLogo.Source = SendBrickLogo.Source;
             }
         }
     }
