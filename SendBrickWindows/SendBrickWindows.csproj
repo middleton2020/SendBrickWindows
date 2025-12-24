@@ -8,18 +8,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Resouorces\CompanyLogo.png" />
-    <None Remove="Resouorces\SendBrick.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Resouorces\CompanyLogo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resouorces\SendBrick.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
 </Project>
