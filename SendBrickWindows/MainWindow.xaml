@@ -1,12 +1,35 @@
-﻿<Window x:Class="SendBrickWindows.MainWindow"
+﻿<Window x:Class="CM.SendBrickWindows.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SendBrickWindows"
+        xmlns:local="clr-namespace:CM.SendBrickWindows"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid InputScope="{Binding Source, ElementName=BricklinkLogo}" Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" MinHeight="100" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="SendBrickLogo" Source="/Resources/SendBrick.png"
+       VerticalAlignment="Center" HorizontalAlignment="Center" 
+       Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,10,0,10" />
+
     </Grid>
 </Window>
