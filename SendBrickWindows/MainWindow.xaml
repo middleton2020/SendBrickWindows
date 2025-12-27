@@ -31,5 +31,34 @@
        VerticalAlignment="Center" HorizontalAlignment="Center" 
        Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,10,0,10" />
 
+        <TextBlock Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"
+           TextAlignment="Center" FontSize="36" FontFamily="Ariel" FontWeight="Bold">
+            Welcome to SendBrick, brick vendor tool
+        </TextBlock>
+
+        <Image x:Name="StoreLogo" Source="/Resources/CompanyLogo.png" Grid.Column="1" Grid.Row="3" 
+       Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Grid.Column="1" Grid.Row="4" FontSize="24" FontWeight="Bold">
+            User Name:
+        </TextBlock>
+        <TextBox x:Name="UserName" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" FontSize="24">
+
+        </TextBox>
+
+        <TextBlock Grid.Column="1" Grid.Row="5" FontSize="24" FontWeight="Bold">
+    Password:
+        </TextBlock>
+        <TextBox x:Name="Password" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" FontSize="24">
+    
+        </TextBox>
+
+        <Button x:Name="BtnLogin" Click="DoLogin" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Height="20" Margin="307,34,0,0" Grid.RowSpan="2" VerticalAlignment="Top">
+            Login
+        </Button>
+
+        <TextBlock Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" TextAlignment="Center" FontSize="36" FontWeight="Bold">
+            Company Name
+        </TextBlock>
+
     </Grid>
 </Window>

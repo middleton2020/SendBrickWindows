@@ -23,5 +23,10 @@ namespace CM.SendBrickWindows
         {
             InitializeComponent();
         }
+
+        private void DoLogin(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
