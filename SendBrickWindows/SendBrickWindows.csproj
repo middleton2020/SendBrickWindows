@@ -17,4 +17,13 @@
     <Folder Include="Resources\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\CompanyLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\SendBrick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
