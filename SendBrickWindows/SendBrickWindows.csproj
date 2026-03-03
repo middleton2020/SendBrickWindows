@@ -38,4 +38,9 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Windows\" />
+  </ItemGroup>
+
 </Project>
